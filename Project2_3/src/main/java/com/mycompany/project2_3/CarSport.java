@@ -1,4 +1,3 @@
-
 package com.mycompany.project2_3;
 import java.util.Date;
 import java.util.ArrayList;
@@ -7,6 +6,8 @@ public class CarSport extends Car implements IBookable{
 public CarSport(int id,int plateNumber,int numberOfTires,double dailyFee,String color,int seatingCapacity,int numOfDoors,double HP){
     super(id,plateNumber,numberOfTires,dailyFee,color,seatingCapacity,numOfDoors); 
     this.HP=HP;
+}
+public CarSport(){
 }
     @Override 
     public void bookMe(ArrayList<Vehicle> alist,ArrayList<Vehicle> blist,Date s,Date e) throws SorryWeDontHaveThatOneException{
