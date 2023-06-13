@@ -6,7 +6,9 @@ public class CarSW extends Car implements ILoadable{
 public CarSW(int id,int plateNumber,int numberOfTires,double dailyFee,String color,int seatingCapacity,int numOfDoors,double loadingCapacity){
     super(id,plateNumber,numberOfTires,dailyFee,color,seatingCapacity,numOfDoors);
     this.loadingCapacity=loadingCapacity;
-}    
+}
+public CarSW(){
+}
     public void loadMe(double lc) throws OverWeightException{
         if(lc>getLoadingCapacity()){
             throw new OverWeightException("overwieght");
