@@ -1,4 +1,5 @@
- package com.mycompany.project2_3;
+package com.mycompany.project2_3;
+import java.util.Date;
 import java.util.Scanner;
 public class admin { 
     VehiclePark vp=new VehiclePark();
@@ -21,10 +22,20 @@ public void AdminPanel(){
                 vp.displayAvailableVehicles();
                 break;
             case 3:
-                vp.addVehicle(v);
+                System.out.println("enter id:");
+                int id=scn.nextInt();
+                System.out.println("enter plate no:");
+                int pn=scn.nextInt();
+                System.out.println("enter model:");
+                String m=scn.nextLine();
+                System.out.println("enter fee:");
+                Double fee=scn.nextDouble();
+                vp.addVehicle(id,pn,m,fee);
                 break;
-            case 4:
-                vp.removeVehicle(v);
+            case 4:           
+                System.out.println("enter vehicle's id");
+                int _id=scn.nextInt();
+                vp.removeVehicle(_id);
                 break;
             case 5:
                 vp.dailyReport();
@@ -38,3 +49,5 @@ public void AdminPanel(){
     }
 }
 }
+
+    
