@@ -8,6 +8,9 @@ public Truck(int id,int plateNumber,int numberOfTires,double dailyFee,double loa
     super(id,plateNumber,numberOfTires,dailyFee);
     this.loadingCapacity=loadingCapacity;
 }
+public Truck(){
+    
+}
     @Override 
     public void bookMe(ArrayList<Vehicle> alist,ArrayList<Vehicle> blist,Date s,Date e) throws SorryWeDontHaveThatOneException{
     if(!alist.contains(this)){
