@@ -10,7 +10,8 @@ public Car(int id,int plateNumber,int numberOfTires,double dailyFee,String color
     this.seatingCapacity=seatingCapacity;
     this.numOfDoors=numOfDoors;
 }    
-
+public Car(){
+}
     public String getColor() {
         return color;
     }
