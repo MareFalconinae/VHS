@@ -7,7 +7,8 @@ public CarSUV(int id,int plateNumber,int numberOfTires,double dailyFee,String co
    super(id,plateNumber,numberOfTires,dailyFee,color,seatingCapacity,numOfDoors); 
    this.WD=WD;
 }    
-
+public CarSUV(){
+}
     public String getWD() {
         return WD;
     }
@@ -15,3 +16,4 @@ public CarSUV(int id,int plateNumber,int numberOfTires,double dailyFee,String co
         this.WD = WD;
     }
 }
+
