@@ -1,7 +1,6 @@
 package com.mycompany.project2_3;
 import java.util.Scanner;
 public class TestVHS {
-    
     public static void main(String[] args) {
     Scanner scn=new Scanner(System.in);
     System.out.println("What is your role?");
