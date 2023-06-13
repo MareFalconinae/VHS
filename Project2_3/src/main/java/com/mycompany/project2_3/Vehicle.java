@@ -6,9 +6,10 @@ public abstract class Vehicle implements IRentable{
     private Date startDate;
     private Date finalDate;
     private int id;
-    private final int plateNumber, numberOfTires;
+    private final int plateNumber,numberOfTires;
     private double dailyFee;
-    
+public Vehicle(){    
+}    
 public Vehicle(int id,int plateNumber,int numberOfTires,double dailyFee){    
     this.id=id;
     this.plateNumber=plateNumber;
